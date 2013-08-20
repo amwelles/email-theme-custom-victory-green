@@ -87,7 +87,7 @@
 		      
 		    <!-- ### FOOTER ### -->   
 		      <tr>
-		      	<td class="container-padding" bgcolor="#7aa242" style="background-color:#7aa242;font-size:13px;line-height:20px;font-family:Arial,'Helvetica',sans-serif;color:#333;" align="left">
+		      	<td class="container-padding" bgcolor="#8dc73f" style="background-color:#8dc73f;font-size:13px;line-height:20px;font-family:Arial,'Helvetica',sans-serif;color:#333;" align="left">
 		      		<p style="color:#364623;margin-left:20px;margin-right:20px;line-height:1.5;">
 			      		{{ settings.official_name }}{% if settings.has_address? %} &middot; {{ settings.address.one_line }} {% endif %} 
                         <br/>This email was sent to <a style="color:#485f24;" href="{{ recipient.email }}">{{ recipient.email }}</a>.  To stop receiving emails, <a style="color:#485f24;" href="{{ settings.site.unsubscribe_url }}">click here</a>.
