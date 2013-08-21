@@ -2,69 +2,63 @@
    "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="initial-scale=1.0"><!-- So that mobile webkit will display zoomed in -->
-    <meta name="format-detection" content="telephone=no"><!-- disable auto telephone linking in iOS -->
-    <title>NationBuilder</title>
-    <style type="text/css">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="initial-scale=1.0"><!-- So that mobile webkit will display zoomed in -->
+	<meta name="format-detection" content="telephone=no"><!-- disable auto telephone linking in iOS -->
+	<title>NationBuilder</title>
+	<style type="text/css">
+		body { background-color:#29aead; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; background-image: none; color:#808080; font-family: Arial, Helvetica, sans-serif; margin:0; padding:0; background:#fff; } /* I duplicated this on the body tag with a style attribute */
+		table { border-spacing:0; border-collapse:collapse; border-spacing:0; } /* you can actually declare this with attributes (cellspacing=0) on each table */
+		table td { border-collapse:collapse; } /* same as above */
+		p { margin: 1em 0; } /* you'll probably want to declare this inline as well (with a style attribute) */
+		h1.site-title { font-size:25px; } /* same as above */
+		.body-content img { max-width: 100%; } /* same as above */
 
-        /* Resets:see reset.css for details */
-      /*body{background:url('bg.png') #ccd471;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;}*/
-      body{background-color:#29aead; -webkit-text-size-adjust:none;-ms-text-size-adjust:none;}
-        body { background-image: none !important;}
-      
-
-        body{color:#808080;font-family:Arial,'Helvetica',sans-serif;margin:0;padding:0;}
-        table{border-spacing:0;border-collapse:collapse;border-spacing:0;}
-        table td{border-collapse:collapse;}
-        p{margin-bottom:1em;}
-		h1.site-title{font-size:25px;}
-		.body-content img{max-width:100%;}
 		
         /* Constrain email width for small screens */
         @media screen and (max-width:600px) {
-            table[class="container"] { width:100%!important; }
+            table[class="container"] { width:100%!important; } /* this ensures that the table is fluid on screens smaller than 600 pixels */
         }
 
         /* Give content more room on mobile */
         @media screen and (max-width:480px) {
-        	h1[class="site-title"] { font-size:25px!important; }
-         	h1[class="site-title"] { font-size:30px!important; }
+        	/* h1[class="site-title"] { font-size:25px!important; } */
+         	h1[class="site-title"] { font-size:30px!important; } /* this makes the title larger on screens smaller than 480 pixels */
        
 			div[class="body-content"] img { width:100%; }
         	table[class="small-table"] { width:95%!important; }
-        	td[class="logo"] { display:none; }
+        	td[class="logo"] { display:none; } /* this hides the logo on screens smaller than 480 pixels */
         }
 
-        /* Styles for forcing columns to rows */
+        /* Styles for forcing columns to rows -- I'm not sure why this comment is here, as it doesn't look like there are any columns at all */
         @media only screen and (max-width:600px) {
-        	h1[class="site-title"] { font-size:22px!important; padding-top:20px; }
-        	h1[class="site-title"] { font-size:25px!important; padding-top:20px; }
+        	/* h1[class="site-title"] { font-size:22px!important; padding-top:20px; } */
+        	h1[class="site-title"] { font-size:25px!important; padding-top:20px; } /* this adds padding to the top of the title on screens smaller than 600 pixels */
         
         }
 
     </style>
 </head>
 </head>
-<body style="margin:0; padding:0; bgcolor:#fff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<body style="background-color:#29aead; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; background-image: none; color:#808080; font-family: Arial, Helvetica, sans-serif; margin:0; padding:0; background:#fff;" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 
 <!-- 100% wrapper -->
-<table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="#ccd471">
+<table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
   <tr>
     <td align="center" valign="top" bgcolor="#fff">
 
    <!-- ### 600PX CONTAINER ### -->
-       <table width="600" cellpadding="0" cellspacing="0" bgcolor="#29AEAD;" style="background-color:#29AEAD;" class="container">
+       <table width="600" cellpadding="0" cellspacing="0" style="background-color:#29AEAD;" class="container">
        	<tr>
        	  <td>
        	  	<!-- ### SMALLER TABLE ### -->
-       	  		<table border="0" width="550" cellpadding="0" cellspacing="0" class="small-table" bgcolor="#b8b948"align="center" style="background-color:#b8b948;margin-top:8px;margin-bottom:10px;">
+       	  		<table border="0" width="550" cellpadding="0" cellspacing="0" class="small-table" align="center" style="background-color:#b8b948;margin-top:8px;margin-bottom:10px;">
 		      <!-- ### HEADER ### --->
 					<tr>
-						<td style="background-repeat:repeat-x;background-color:#8dc73f;padding-top:8px;padding-right:20px;padding-bottom:20px;padding-left:20px;" bgcolor="#8dc73f;">
+						<td style="background-repeat:repeat-x;background-color:#8dc73f;padding-top:8px;padding-right:20px;padding-bottom:20px;padding-left:20px;">
 							<table cellpadding="0" cellspacing="0" border="0">
 								<tr>
-                  <td style="font-family:'Georgia',Times,serif;padding-left:12px;padding-right:20px;text-align:left;" valign="middle"><a style="color:#fff;font-weight:bold;text-decoration:none;word-wrap:break-word;" href="{{ settings.site.full_url }}"><h1 class="site-title" style="color:#ffffff; font-family:'Helvetica','Sans-serif';">Interfaith Partners for the Chesapeake: The&nbsp;Latest&nbsp;News</h1></a></td>
+                  <td style="font-family:'Georgia',Times,serif;padding-left:12px;padding-right:20px;text-align:left;" valign="middle"><a style="color:#fff; font-weight:bold; text-decoration:none; word-wrap:break-word;" href="{{ settings.site.full_url }}"><h1 class="site-title" style="color:#ffffff; font-family:'Helvetica','Sans-serif';">Interfaith Partners for the Chesapeake: The&nbsp;Latest&nbsp;News</h1></a></td>
 								</tr>
 							</table>
 						</td>
@@ -72,10 +66,10 @@
 					
 			<!-- ### BEGIN CONTENT ### -->
 					<tr>
-						<td bgcolor="#ffffff" style="background-color:#ffffff;padding-left:15px;padding-right:15px;padding-top:15px;padding-bottom:15px;font-size:14px;line-height:20px;font-family:Helvetica,sans-serif;color:#333;" align="left">
+						<td style="background-color:#ffffff;padding-left:15px;padding-right:15px;padding-top:15px;padding-bottom:15px;font-size:14px;line-height:20px;font-family:Helvetica,sans-serif;color:#333;" align="left">
 						
 						<!--- ### BODY ### ---->
-						<table border="0" width="550" cellpadding="0" cellspacing="0" class="container" bgcolor="#ffffff" style="border-collapse:collapse;border-spacing:0;">
+						<table border="0" width="550" cellpadding="0" cellspacing="0" class="container">
 							<tr>
 								<td style="font-family:Arial,'Helvetica',sans-serif;" class="body-content">{{ body }}</td>
 							</tr>
@@ -87,7 +81,7 @@
 		      
 		    <!-- ### FOOTER ### -->   
 		      <tr>
-		      	<td class="container-padding" bgcolor="#8dc73f" style="background-color:#8dc73f;font-size:13px;line-height:20px;font-family:Arial,'Helvetica',sans-serif;color:#333;" align="left">
+		      	<td class="container-padding" style="background-color:#8dc73f;font-size:13px;line-height:20px;font-family:Arial,'Helvetica',sans-serif;color:#333;" align="left">
 		      		<p style="color:#364623;margin-left:20px;margin-right:20px;line-height:1.5;">
 			      		{{ settings.official_name }}{% if settings.has_address? %} &middot; {{ settings.address.one_line }} {% endif %} 
                         <br/>This email was sent to <a style="color:#485f24;" href="{{ recipient.email }}">{{ recipient.email }}</a>.  To stop receiving emails, <a style="color:#485f24;" href="{{ settings.site.unsubscribe_url }}">click here</a>.
